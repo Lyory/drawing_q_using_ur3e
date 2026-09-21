@@ -20,7 +20,7 @@ class DrawQ(Node):
     FRAME, EEF, GROUP = "base_link", "tool0", "ur_manipulator"
     STEP, SPEED = 0.004, 0.08
     WIDTH, HEIGHT = 0.06, 0.12
-    Z_OFFSET = 0.04  # raise the whole drawing by 2 cm
+    Z_OFFSET = 0.05  # raise the whole drawing by 2 cm
 
     SAFE_JOINTS = {
         "shoulder_pan_joint": -0.8062525553,

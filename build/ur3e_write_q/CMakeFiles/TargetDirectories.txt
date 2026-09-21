@@ -1,9 +1,0 @@
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/uninstall.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/ur3e_write_q_uninstall.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/test.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/edit_cache.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/rebuild_cache.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/list_install_components.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/install.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/install/local.dir
-/home/quan/workspaces/ur_gz/build/ur3e_write_q/CMakeFiles/install/strip.dir
