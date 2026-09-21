@@ -1,0 +1,75 @@
+[0.011s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/workspaces/ur_gz/src/ur3e_write_q -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/quan/workspaces/ur_gz/install/ur3e_write_q
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.098s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.162s] -- Detecting C compiler ABI info - done
+[0.167s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.167s] -- Detecting C compile features
+[0.167s] -- Detecting C compile features - done
+[0.170s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.238s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.364s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.418s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.448s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.487s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.492s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.500s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.511s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.526s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.578s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.580s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.666s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.686s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.721s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.728s] -- Looking for pthread.h
+[0.785s] -- Looking for pthread.h - found
+[0.785s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.854s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.855s] -- Found Threads: TRUE  
+[0.902s] -- Found moveit_core: 2.5.10 (/opt/ros/humble/share/moveit_core/cmake)
+[0.938s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.983s] -- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)
+[0.988s] -- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.006s] -- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.130s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.182s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.182s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.399s] -- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.403s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.415s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.443s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.464s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.548s] -- Configuring done
+[1.565s] -- Generating done
+[1.570s] -- Build files have been written to: /home/quan/workspaces/ur_gz/build/ur3e_write_q
+[1.582s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/workspaces/ur_gz/src/ur3e_write_q -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/quan/workspaces/ur_gz/install/ur3e_write_q
+[1.582s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/workspaces/ur_gz/build/ur3e_write_q -- -j16 -l16
+[1.628s] [ 50%] [32mBuilding CXX object CMakeFiles/write_q.dir/src/write_q.cpp.o[0m
+[8.248s] [100%] [32m[1mLinking CXX executable write_q[0m
+[8.559s] [100%] Built target write_q
+[8.569s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/workspaces/ur_gz/build/ur3e_write_q -- -j16 -l16
+[8.577s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/workspaces/ur_gz/build/ur3e_write_q
+[8.583s] -- Install configuration: ""
+[8.584s] -- Execute custom install script
+[8.584s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/lib/ur3e_write_q/write_q
+[8.592s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/launch/write_q.launch.py
+[8.599s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/package_run_dependencies/ur3e_write_q
+[8.608s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/parent_prefix_path/ur3e_write_q
+[8.615s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.sh
+[8.623s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.dsv
+[8.630s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.sh
+[8.639s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.dsv
+[8.646s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.bash
+[8.654s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.sh
+[8.661s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.zsh
+[8.669s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.dsv
+[8.676s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.dsv
+[8.683s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/packages/ur3e_write_q
+[8.691s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig.cmake
+[8.697s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig-version.cmake
+[8.705s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.xml
+[8.714s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/workspaces/ur_gz/build/ur3e_write_q

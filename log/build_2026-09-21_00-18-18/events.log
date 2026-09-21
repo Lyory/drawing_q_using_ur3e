@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000491] (-) JobUnselected: {'identifier': 'ur_simulation_gz'}
+[0.000670] (ur3e_write_q) JobQueued: {'identifier': 'ur3e_write_q', 'dependencies': OrderedDict([('ur_simulation_gz', '/home/quan/workspaces/ur_gz/install/ur_simulation_gz')])}
+[0.000774] (ur3e_write_q) JobStarted: {'identifier': 'ur3e_write_q'}
+[0.009089] (ur3e_write_q) JobProgress: {'identifier': 'ur3e_write_q', 'progress': 'cmake'}
+[0.009671] (ur3e_write_q) Command: {'cmd': ['/usr/bin/cmake', '/home/quan/workspaces/ur_gz/src/ur3e_write_q', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/quan/workspaces/ur_gz/install/ur3e_write_q'], 'cwd': '/home/quan/workspaces/ur_gz/build/ur3e_write_q', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/workspaces/ur_gz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1594'), ('SYSTEMD_EXEC_PID', '1965'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4290'), ('COLCON_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:3036'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1937,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1937'), ('INVOCATION_ID', 'aff3c8a133594901884c952c7f960d08'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:4ceaa434-0baf-44ae-809a-9dba310a5de6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quan/workspaces/ur_gz/build/ur3e_write_q'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[0.056169] (ur3e_write_q) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.096903] (ur3e_write_q) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099638] (-) TimerEvent: {}
+[0.101984] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.158992] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.165261] (ur3e_write_q) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.165435] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.165630] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.167560] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199873] (-) TimerEvent: {}
+[0.232550] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.240369] (ur3e_write_q) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.240637] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.241162] (ur3e_write_q) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.244909] (ur3e_write_q) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299956] (-) TimerEvent: {}
+[0.362895] (ur3e_write_q) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400113] (-) TimerEvent: {}
+[0.416112] (ur3e_write_q) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.444772] (ur3e_write_q) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.481192] (ur3e_write_q) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.486070] (ur3e_write_q) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.493912] (ur3e_write_q) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.500230] (-) TimerEvent: {}
+[0.504472] (ur3e_write_q) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.519237] (ur3e_write_q) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.560640] (ur3e_write_q) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.563777] (ur3e_write_q) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600357] (-) TimerEvent: {}
+[0.655644] (ur3e_write_q) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.677789] (ur3e_write_q) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.700553] (-) TimerEvent: {}
+[0.710888] (ur3e_write_q) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.718460] (ur3e_write_q) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.779965] (ur3e_write_q) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.780298] (ur3e_write_q) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800773] (-) TimerEvent: {}
+[0.851367] (ur3e_write_q) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.852543] (ur3e_write_q) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.899798] (ur3e_write_q) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.900837] (-) TimerEvent: {}
+[0.926141] (ur3e_write_q) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.001062] (-) TimerEvent: {}
+[1.089587] (ur3e_write_q) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.101254] (-) TimerEvent: {}
+[1.135572] (ur3e_write_q) StdoutLine: {'line': b'-- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)\n'}
+[1.140491] (ur3e_write_q) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.160271] (ur3e_write_q) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.201450] (-) TimerEvent: {}
+[1.260478] (ur3e_write_q) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.285748] (ur3e_write_q) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.285922] (ur3e_write_q) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.301565] (-) TimerEvent: {}
+[1.401878] (-) TimerEvent: {}
+[1.411945] (ur3e_write_q) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.440661] (ur3e_write_q) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.461783] (ur3e_write_q) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[1.501962] (-) TimerEvent: {}
+[1.542047] (ur3e_write_q) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.561324] (ur3e_write_q) StdoutLine: {'line': b'-- Generating done\n'}
+[1.566209] (ur3e_write_q) StdoutLine: {'line': b'-- Build files have been written to: /home/quan/workspaces/ur_gz/build/ur3e_write_q\n'}
+[1.576517] (ur3e_write_q) CommandEnded: {'returncode': 0}
+[1.577071] (ur3e_write_q) JobProgress: {'identifier': 'ur3e_write_q', 'progress': 'build'}
+[1.578599] (ur3e_write_q) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/quan/workspaces/ur_gz/build/ur3e_write_q', '--', '-j16', '-l16'], 'cwd': '/home/quan/workspaces/ur_gz/build/ur3e_write_q', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/workspaces/ur_gz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1594'), ('SYSTEMD_EXEC_PID', '1965'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4290'), ('COLCON_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:3036'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1937,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1937'), ('INVOCATION_ID', 'aff3c8a133594901884c952c7f960d08'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:4ceaa434-0baf-44ae-809a-9dba310a5de6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quan/workspaces/ur_gz/build/ur3e_write_q'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[1.602166] (-) TimerEvent: {}
+[1.630252] (ur3e_write_q) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/write_q.dir/src/write_q.cpp.o\x1b[0m\n'}
+[1.702278] (-) TimerEvent: {}
+[1.802658] (-) TimerEvent: {}
+[1.903044] (-) TimerEvent: {}
+[2.003401] (-) TimerEvent: {}
+[2.103763] (-) TimerEvent: {}
+[2.204055] (-) TimerEvent: {}
+[2.304362] (-) TimerEvent: {}
+[2.404684] (-) TimerEvent: {}
+[2.505018] (-) TimerEvent: {}
+[2.605320] (-) TimerEvent: {}
+[2.705616] (-) TimerEvent: {}
+[2.805924] (-) TimerEvent: {}
+[2.906236] (-) TimerEvent: {}
+[3.006555] (-) TimerEvent: {}
+[3.106864] (-) TimerEvent: {}
+[3.207164] (-) TimerEvent: {}
+[3.307473] (-) TimerEvent: {}
+[3.407781] (-) TimerEvent: {}
+[3.508093] (-) TimerEvent: {}
+[3.608393] (-) TimerEvent: {}
+[3.708686] (-) TimerEvent: {}
+[3.809003] (-) TimerEvent: {}
+[3.909321] (-) TimerEvent: {}
+[4.009644] (-) TimerEvent: {}
+[4.109988] (-) TimerEvent: {}
+[4.210294] (-) TimerEvent: {}
+[4.310574] (-) TimerEvent: {}
+[4.410877] (-) TimerEvent: {}
+[4.511193] (-) TimerEvent: {}
+[4.611496] (-) TimerEvent: {}
+[4.711802] (-) TimerEvent: {}
+[4.812108] (-) TimerEvent: {}
+[4.912423] (-) TimerEvent: {}
+[5.012753] (-) TimerEvent: {}
+[5.113061] (-) TimerEvent: {}
+[5.213362] (-) TimerEvent: {}
+[5.313686] (-) TimerEvent: {}
+[5.414015] (-) TimerEvent: {}
+[5.514341] (-) TimerEvent: {}
+[5.614671] (-) TimerEvent: {}
+[5.715011] (-) TimerEvent: {}
+[5.815371] (-) TimerEvent: {}
+[5.915756] (-) TimerEvent: {}
+[6.016023] (-) TimerEvent: {}
+[6.116319] (-) TimerEvent: {}
+[6.216674] (-) TimerEvent: {}
+[6.317044] (-) TimerEvent: {}
+[6.417393] (-) TimerEvent: {}
+[6.517763] (-) TimerEvent: {}
+[6.618032] (-) TimerEvent: {}
+[6.718344] (-) TimerEvent: {}
+[6.818701] (-) TimerEvent: {}
+[6.919072] (-) TimerEvent: {}
+[7.019354] (-) TimerEvent: {}
+[7.119701] (-) TimerEvent: {}
+[7.220096] (-) TimerEvent: {}
+[7.320461] (-) TimerEvent: {}
+[7.420860] (-) TimerEvent: {}
+[7.521180] (-) TimerEvent: {}
+[7.621462] (-) TimerEvent: {}
+[7.721827] (-) TimerEvent: {}
+[7.822081] (-) TimerEvent: {}
+[7.922428] (-) TimerEvent: {}
+[8.022773] (-) TimerEvent: {}
+[8.063477] (ur3e_write_q) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable write_q\x1b[0m\n'}
+[8.122871] (-) TimerEvent: {}
+[8.223137] (-) TimerEvent: {}
+[8.323438] (-) TimerEvent: {}
+[8.368497] (ur3e_write_q) StdoutLine: {'line': b'[100%] Built target write_q\n'}
+[8.378029] (ur3e_write_q) CommandEnded: {'returncode': 0}
+[8.378410] (ur3e_write_q) JobProgress: {'identifier': 'ur3e_write_q', 'progress': 'install'}
+[8.385579] (ur3e_write_q) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/quan/workspaces/ur_gz/build/ur3e_write_q'], 'cwd': '/home/quan/workspaces/ur_gz/build/ur3e_write_q', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/workspaces/ur_gz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1594'), ('SYSTEMD_EXEC_PID', '1965'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4290'), ('COLCON_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:3036'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1937,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1937'), ('INVOCATION_ID', 'aff3c8a133594901884c952c7f960d08'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:4ceaa434-0baf-44ae-809a-9dba310a5de6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quan/workspaces/ur_gz/build/ur3e_write_q'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/workspaces/ur_gz/install/ur3e_write_q:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[8.392408] (ur3e_write_q) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.392676] (ur3e_write_q) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.392929] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/lib/ur3e_write_q/write_q\n'}
+[8.400732] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/launch/write_q.launch.py\n'}
+[8.407792] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/package_run_dependencies/ur3e_write_q\n'}
+[8.416562] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/parent_prefix_path/ur3e_write_q\n'}
+[8.423602] (-) TimerEvent: {}
+[8.424349] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.sh\n'}
+[8.435215] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.dsv\n'}
+[8.442964] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.sh\n'}
+[8.451619] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.dsv\n'}
+[8.458196] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.bash\n'}
+[8.466068] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.sh\n'}
+[8.473271] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.zsh\n'}
+[8.481033] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.dsv\n'}
+[8.487101] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.dsv\n'}
+[8.493596] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/packages/ur3e_write_q\n'}
+[8.500479] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig.cmake\n'}
+[8.506570] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig-version.cmake\n'}
+[8.512932] (ur3e_write_q) StdoutLine: {'line': b'-- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.xml\n'}
+[8.520547] (ur3e_write_q) CommandEnded: {'returncode': 0}
+[8.523941] (-) TimerEvent: {}
+[8.531758] (ur3e_write_q) JobEnded: {'identifier': 'ur3e_write_q', 'rc': 0}
+[8.532307] (-) EventReactorShutdown: {}

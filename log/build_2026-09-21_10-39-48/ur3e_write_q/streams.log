@@ -1,0 +1,44 @@
+[0.011s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/workspaces/ur_gz/src/ur3e_write_q/ur3e_write_q -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/quan/workspaces/ur_gz/install/ur3e_write_q
+[0.106s] -- The C compiler identification is GNU 11.4.0
+[0.177s] -- The CXX compiler identification is GNU 11.4.0
+[0.186s] -- Detecting C compiler ABI info
+[0.252s] -- Detecting C compiler ABI info - done
+[0.257s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.258s] -- Detecting C compile features
+[0.259s] -- Detecting C compile features - done
+[0.262s] -- Detecting CXX compiler ABI info
+[0.333s] -- Detecting CXX compiler ABI info - done
+[0.339s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.339s] -- Detecting CXX compile features
+[0.340s] -- Detecting CXX compile features - done
+[0.344s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.499s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.563s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.663s] -- Configuring done
+[0.664s] -- Generating done
+[0.666s] -- Build files have been written to: /home/quan/workspaces/ur_gz/build/ur3e_write_q
+[0.669s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/workspaces/ur_gz/src/ur3e_write_q/ur3e_write_q -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/quan/workspaces/ur_gz/install/ur3e_write_q
+[0.671s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/workspaces/ur_gz/build/ur3e_write_q -- -j16 -l16
+[0.712s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/workspaces/ur_gz/build/ur3e_write_q -- -j16 -l16
+[0.722s] Invoking command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/workspaces/ur_gz/build/ur3e_write_q
+[0.728s] -- Install configuration: ""
+[0.728s] -- Execute custom install script
+[0.729s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/lib/ur3e_write_q/draw_q
+[0.737s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/launch/write_q.launch.py
+[0.743s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/config/draw_q.rviz
+[0.750s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/package_run_dependencies/ur3e_write_q
+[0.760s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/parent_prefix_path/ur3e_write_q
+[0.767s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.sh
+[0.775s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/ament_prefix_path.dsv
+[0.782s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.sh
+[0.789s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/environment/path.dsv
+[0.797s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.bash
+[0.805s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.sh
+[0.813s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.zsh
+[0.821s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/local_setup.dsv
+[0.829s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.dsv
+[0.837s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ament_index/resource_index/packages/ur3e_write_q
+[0.845s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig.cmake
+[0.853s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/cmake/ur3e_write_qConfig-version.cmake
+[0.861s] -- Symlinking: /home/quan/workspaces/ur_gz/install/ur3e_write_q/share/ur3e_write_q/package.xml
+[0.870s] Invoked command in '/home/quan/workspaces/ur_gz/build/ur3e_write_q' returned '0': AMENT_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/workspaces/ur_gz/install/ur_simulation_gz:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/workspaces/ur_gz/build/ur3e_write_q

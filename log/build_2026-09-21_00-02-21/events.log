@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000360] (-) JobUnselected: {'identifier': 'ur3e_write_q'}
+[0.000435] (-) JobUnselected: {'identifier': 'ur_simulation_gz'}
+[0.000712] (-) EventReactorShutdown: {}

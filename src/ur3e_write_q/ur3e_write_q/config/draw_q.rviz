@@ -1,0 +1,82 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Ground (XY)
+      Enabled: true
+      Plane: XY
+      Cell Size: 0.05
+      Plane Cell Count: 20
+      Color: 100; 100; 110
+      Alpha: 0.45
+      Reference Frame: base_link
+
+    - Class: rviz_default_plugins/Marker
+      Name: Fixed writing plane
+      Enabled: true
+      Topic:
+        Value: /draw_q/plane
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+
+    - Class: rviz_default_plugins/Path
+      Name: Fixed Q
+      Enabled: true
+      Topic:
+        Value: /draw_q/path
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Line Style: Lines
+      Line Width: 0.008
+      Pose Style: None
+      Color: 0; 255; 0
+      Buffer Length: 1
+
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+
+    - Class: rviz_default_plugins/Axes
+      Name: tool0
+      Enabled: true
+      Reference Frame: tool0
+      Length: 0.10
+      Radius: 0.007
+
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 35; 35; 35
+    Frame Rate: 30
+
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Target Frame: base_link
+      Distance: 1.15
+      Focal Point:
+        X: 0.20
+        Y: 0.00
+        Z: 0.30
+      Yaw: 1.55
+      Pitch: 0.22
+      Near Clip Distance: 0.01
+
+Window Geometry:
+  Width: 1450
+  Height: 900
