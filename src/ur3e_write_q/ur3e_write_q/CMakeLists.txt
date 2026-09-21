@@ -3,7 +3,7 @@ project(ur3e_write_q)
 
 find_package(ament_cmake REQUIRED)
 
-install(PROGRAMS scripts/draw_q
+install(PROGRAMS scripts/draw_q.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -20,6 +20,7 @@ class DrawQ(Node):
     FRAME, EEF, GROUP = "base_link", "tool0", "ur_manipulator"
     STEP, SPEED = 0.004, 0.08
     WIDTH, HEIGHT = 0.06, 0.12
+    Z_OFFSET = 0.04  # raise the whole drawing by 2 cm
 
     SAFE_JOINTS = {
         "shoulder_pan_joint": -0.8062525553,
@@ -96,7 +97,7 @@ class DrawQ(Node):
     def make_q(self, start):
         x = start.pose.position.x
         y0 = start.pose.position.y
-        z0 = start.pose.position.z
+        z0 = start.pose.position.z + self.Z_OFFSET
         ry, rz = self.WIDTH / 2.0, self.HEIGHT / 2.0
         cy, cz = y0, z0 + rz
 
@@ -146,7 +147,8 @@ class DrawQ(Node):
         req.header = path.header
         req.start_state.is_diff = True
         req.group_name, req.link_name = self.GROUP, self.EEF
-        req.waypoints = [p.pose for p in path.poses[1:]]
+        # Q is raised above the current TCP, so include the first point too.
+        req.waypoints = [p.pose for p in path.poses]
         req.max_step = self.STEP
         req.jump_threshold = 5.0
         req.revolute_jump_threshold = 0.3

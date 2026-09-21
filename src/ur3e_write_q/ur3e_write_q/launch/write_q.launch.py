@@ -49,7 +49,7 @@ def generate_launch_description():
 
     draw = Node(
         package="ur3e_write_q",
-        executable="draw_q",
+        executable="draw_q.py",
         parameters=[{"use_sim_time": True}],
         output="screen",
     )
