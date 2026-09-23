@@ -20,7 +20,8 @@ class DrawQ(Node):
     FRAME, EEF, GROUP = "base_link", "tool0", "ur_manipulator"
     STEP, SPEED = 0.004, 0.08
     WIDTH, HEIGHT = 0.06, 0.12
-    Z_OFFSET = 0.05  # raise the whole drawing by 2 cm
+    Z_OFFSET = 0.05  # drawing starts 5 cm above the safe pose
+    SAFE_Z_LIFT = 0.02  # raise the safe pose by 2 cm before drawing
 
     SAFE_JOINTS = {
         "shoulder_pan_joint": -0.8062525553,
@@ -94,6 +95,15 @@ class DrawQ(Node):
         if result.result.error_code.val != MoveItErrorCodes.SUCCESS:
             raise RuntimeError("Cannot reach safe start")
 
+        start = self.tool_pose()
+        raised = copy.deepcopy(start)
+        raised.pose.position.z += self.SAFE_Z_LIFT
+        path = Path()
+        path.header = copy.deepcopy(start.header)
+        path.poses = [start, raised]
+        self.get_logger().info("Raising safe start by 2 cm...")
+        self.execute(self.compute_q(path, label="Safe lift"))
+
     def make_q(self, start):
         x = start.pose.position.x
         y0 = start.pose.position.y
@@ -139,7 +149,7 @@ class DrawQ(Node):
         m.color.a = 0.20
         self.plane_pub.publish(m)
 
-    def compute_q(self, path):
+    def compute_q(self, path, label="Q"):
         if not self.cartesian.wait_for_service(timeout_sec=30.0):
             raise RuntimeError("/compute_cartesian_path unavailable")
 
@@ -147,7 +157,7 @@ class DrawQ(Node):
         req.header = path.header
         req.start_state.is_diff = True
         req.group_name, req.link_name = self.GROUP, self.EEF
-        # Q is raised above the current TCP, so include the first point too.
+        # Include the first point, which may be above the current TCP.
         req.waypoints = [p.pose for p in path.poses]
         req.max_step = self.STEP
         req.jump_threshold = 5.0
@@ -159,10 +169,10 @@ class DrawQ(Node):
             req.max_acceleration_scaling_factor = self.SPEED
 
         res = self.wait(self.cartesian.call_async(req))
-        self.get_logger().info(f"Cartesian Q: {res.fraction:.1%}")
+        self.get_logger().info(f"Cartesian {label}: {res.fraction:.1%}")
 
         if res.error_code.val != MoveItErrorCodes.SUCCESS or res.fraction < 0.999:
-            raise RuntimeError("Q is not fully reachable/collision-free")
+            raise RuntimeError(f"{label} is not fully reachable/collision-free")
         return res.solution
 
     def execute(self, trajectory):

@@ -57,5 +57,5 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument("ur_type", default_value="ur3e"),
         sim, moveit, rviz,
-        TimerAction(period=15.0, actions=[draw]),
+        TimerAction(period=8.0, actions=[draw]),
     ])
