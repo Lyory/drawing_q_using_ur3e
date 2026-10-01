@@ -1,13 +1,16 @@
+from uuid import uuid4
+
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
+from launch.actions import DeclareLaunchArgument, GroupAction, IncludeLaunchDescription, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node
+from launch_ros.actions import Node, SetRemap
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
     ur_type = LaunchConfiguration("ur_type")
+    partition = "ur3e_write_q_" + uuid4().hex
 
     sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -38,24 +41,33 @@ def generate_launch_description():
     )
 
     rviz = Node(
-        package="rviz2",
-        executable="rviz2",
+        package="rviz2", executable="rviz2", name="rviz2_moveit",
         arguments=["-d", PathJoinSubstitution(
-            [FindPackageShare("ur3e_write_q"), "config", "draw_q.rviz"]
-        )],
-        parameters=[{"use_sim_time": True}],
-        output="log",
-    )
-
-    draw = Node(
-        package="ur3e_write_q",
-        executable="draw_q.py",
-        parameters=[{"use_sim_time": True}],
+            [FindPackageShare("ur3e_write_q"), "config", "draw_q.rviz"])],
+        parameters=[
+            {"use_sim_time": True},
+            PathJoinSubstitution([FindPackageShare("ur_moveit_config"), "config", "kinematics.yaml"]),
+        ],
         output="screen",
     )
-
+    planner = Node(
+        package="ur3e_write_q", executable="plan_q.py",
+        parameters=[{"use_sim_time": True}], output="screen",
+    )
     return LaunchDescription([
         DeclareLaunchArgument("ur_type", default_value="ur3e"),
-        sim, moveit, rviz,
-        TimerAction(period=8.0, actions=[draw]),
+        # Spawn, server, GUI and clock bridge must discover the same isolated world.
+        SetEnvironmentVariable("IGN_PARTITION", partition),
+        SetEnvironmentVariable("GZ_PARTITION", partition),
+        sim,
+        # Keep RViz on the standard action name. Scope backend remaps to MoveIt
+        # because RViz's internal client node does not inherit action remaps.
+        GroupAction([
+            SetRemap(src="/move_action", dst="/draw_q/backend_move_action"),
+            *[SetRemap(src=f"/move_action/_action/{endpoint}",
+                       dst=f"/draw_q/backend_move_action/_action/{endpoint}")
+              for endpoint in ("send_goal", "get_result", "cancel_goal", "feedback", "status")],
+            moveit,
+        ]),
+        planner, rviz,
     ])

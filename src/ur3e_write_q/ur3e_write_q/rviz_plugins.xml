@@ -1,0 +1,5 @@
+<library path="q_motion_planning_display">
+  <class name="ur3e_write_q/MotionPlanning" type="ur3e_write_q::QMotionPlanningDisplay" base_class_type="rviz_common::Display">
+    <description>MoveIt MotionPlanning with preview hidden when Execute is pressed.</description>
+  </class>
+</library>
